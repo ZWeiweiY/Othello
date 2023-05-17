@@ -5,6 +5,10 @@ Othello, a strategy board game for two players, played on an 8×8 uncheckered bo
 
 By implementing artificial intelligence algorithms, such as minimax algorithm and alpha-beta pruning, in a game tree to go for the best move to increase the chance of winning!
 
+### Potential improvements:
+Modify evaluation function considering factors, such as Maximum Pieces, Weighted Square, Mobility and Stability Pieces.
+Other search methods such as NegaScout (Principle Variation Search), MTD(f) will reduce time and space complexity.
+
 ## Why use the Minimax Algorithm?
 
 The minimax algorithm is a robust and reliable method for finding the optimal move in a given position, which is a common choice for developing artificial intelligence (AI) players for two-player games which are deterministic and with perfect information like Othello. 
@@ -37,7 +41,7 @@ There are many different factors that can be taken into account when designing a
 
 We designed the weighted squares on the board, the smaller the number, the greater the value. The corners hold special importance and should be considered high value options, since they cannot be flanked by the opponent once being captured. The corners also allow a player to build pieces around them and provide stability to the player’s pieces.
 
-Other factors for an evaluation function including Mobility and Stability can also take advantages in certain scenarios. We might won first place if we consider these factors, too late for us.
+Other factors for an evaluation function including Mobility and Stability can also take advantages in certain scenarios.
 
 ## Why use α-β pruning?
 
@@ -64,8 +68,12 @@ Run.exe is the interface program.
 The test method is as follows:
 - Put two programs Test_Opponent, Ot8b under the same directory
 - Open two command terminal windows and execute respectively
-- run Test_Opponent F 20
-- run Ot8b S 20
+
+```bash
+run Test_Opponent F 20
+run Ot8b S 20
+```
+
 - The two programs will switch sequences, and be tested for 20 rounds
 - After the test, the winning percentage of the winner will be displayed
 - If not, execute Run.exe after execution, you will see the winning percentage of the winner.
