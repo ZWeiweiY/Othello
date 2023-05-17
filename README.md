@@ -35,13 +35,13 @@ Using the minimax algorithm to play Othello requires the development of a good e
 
 There are many different factors that can be taken into account when designing an evaluation function for Othello, and the specific factors that are included will depend on the goals of the AI player and the strategy it is trying to employ. 
 
-We designed the weighted squares on the board, the smaller the number, the greater the value. The #### corners hold special importance and should be considered high value options, since they cannot be flanked by the opponent once being captured. The corners also allow a player to build pieces around them and provide stability to the player’s pieces.
+We designed the weighted squares on the board, the smaller the number, the greater the value. The corners hold special importance and should be considered high value options, since they cannot be flanked by the opponent once being captured. The corners also allow a player to build pieces around them and provide stability to the player’s pieces.
 
-Other factors for an evaluation function including #### Mobility and #### Stability can also take advantages in certain scenarios. We might won first place if we consider these factors, too late for us.
+Other factors for an evaluation function including Mobility and Stability can also take advantages in certain scenarios. We might won first place if we consider these factors, too late for us.
 
 ## Why use α-β pruning?
 
-α-β pruning is a optimization technique that is used to improve the efficiency of the minimax algorithm, which reduces the number of nodes that need to be evaluate and  lead to faster and more efficient searches.
+α-β pruning is an optimization technique that is used to improve the efficiency of the minimax algorithm, which reduces the number of nodes that need to be evaluate and  lead to faster and more efficient searches.
 
 ## What is α-β?
 
@@ -54,11 +54,12 @@ As the minimax algorithm searches the game tree, it updates the values of α and
 If the value of α exceeds the value of β at any point during the search, the algorithm can stop searching the subtree rooted at that node, as the player will not choose a move that leads to a worse outcome.
 
 ## Run Test
-Run.exe is the interface program.
 
 Test_Opponent.exe is a test program.
 
 Ot8b.c is a modified program (modified segments are commented in c file).
+
+Run.exe is the interface program.
 
 The test method is as follows:
 - Put two programs Test_Opponent, Ot8b under the same directory
