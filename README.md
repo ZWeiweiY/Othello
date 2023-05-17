@@ -2,9 +2,11 @@
 ### Game tree AB search Othello Competition and presentation.
 
 
-Run.exe is the interface program
-Test_Opponent.exe is a test program
-Ot8b.c is a modified program (modified segments are commented in c file)
+Run.exe is the interface program.
+
+Test_Opponent.exe is a test program.
+
+Ot8b.c is a modified program (modified segments are commented in c file).
 
 The test method is as follows:
 - Put two programs Test_Opponent, Ot8b under the same directory
