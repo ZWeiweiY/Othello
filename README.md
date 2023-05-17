@@ -7,11 +7,11 @@ By implementing artificial intelligence algorithms, such as minimax algorithm an
 
 ## Why use the Minimax Algorithm?
 
-The minimax algorithm is a common choice for developing artificial intelligence (AI) players for two-player, deterministic with perfect information games like Othello because it is a robust and reliable method for finding the optimal move in a given position.
+The minimax algorithm is a robust and reliable method for finding the optimal move in a given position, which is a common choice for developing artificial intelligence (AI) players for two-player games which are deterministic and with perfect information like Othello. 
 
-A deterministic game is a type of game in which the outcome is determined by the initial state of the game and the actions taken by the players. This means that if two players play the same game from the same starting position, following the same sequence of moves, they will always reach the same final game state.
+A deterministic game is a type of game in which the outcome is determined by the initial state of the game and the actions taken by the players. In other words, if two players play the same game from the same starting position, following the same sequence of moves, they will always reach the same final game state.
 
-A perfect information game is a type of game in which all players have complete knowledge of the game state at all times. This means that each player has access to all of the information that is relevant to making decisions in the game, including the positions of all pieces on the board, the order in which moves have been made, and any other relevant information.
+A perfect information game is a type of game in which all players have complete knowledge of the game state at all times. Each player has access to all of the information that is relevant to making decisions in the game, including the positions of all pieces on the board, the order in which moves have been made, and any other relevant information.
 
 ## What is the Minimax Algorithm?
 
@@ -35,9 +35,9 @@ Using the minimax algorithm to play Othello requires the development of a good e
 
 There are many different factors that can be taken into account when designing an evaluation function for Othello, and the specific factors that are included will depend on the goals of the AI player and the strategy it is trying to employ. 
 
-We designed the weighted squares on the board, the smaller the number, the greater the value. The corners hold special importance because once captured, they cannot be flanked by the opponent. They also allow a player to build pieces around them and provide stability to the player’s pieces.
+We designed the weighted squares on the board, the smaller the number, the greater the value. The #### corners hold special importance and should be considered high value options, since they cannot be flanked by the opponent once being captured. The corners also allow a player to build pieces around them and provide stability to the player’s pieces.
 
-Other factors for an evaluation function including Mobility and Stability can also take advantages in certain scenarios. We might won first place if we consider these factors, too late for us.
+Other factors for an evaluation function including #### Mobility and #### Stability can also take advantages in certain scenarios. We might won first place if we consider these factors, too late for us.
 
 ## Why use α-β pruning?
 
