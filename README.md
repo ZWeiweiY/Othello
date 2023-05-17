@@ -1,12 +1,11 @@
 # Othello_AI
-## Game tree AB search Othello Competition and presentation.
 
-### Description
+## Description
 Othello, a strategy board game for two players, played on an 8×8 uncheckered board with a fixed initial setup of the board.
 
 By implementing artificial intelligence algorithms, such as minimax algorithm and alpha-beta pruning, in a game tree to go for the best move to increase the chance of winning!
 
-### Why use the Minimax Algorithm?
+## Why use the Minimax Algorithm?
 
 The minimax algorithm is a common choice for developing artificial intelligence (AI) players for two-player, deterministic with perfect information games like Othello because it is a robust and reliable method for finding the optimal move in a given position.
 
@@ -14,13 +13,13 @@ A deterministic game is a type of game in which the outcome is determined by the
 
 A perfect information game is a type of game in which all players have complete knowledge of the game state at all times. This means that each player has access to all of the information that is relevant to making decisions in the game, including the positions of all pieces on the board, the order in which moves have been made, and any other relevant information.
 
-### What is the Minimax Algorithm?
+## What is the Minimax Algorithm?
 
 By evaluating all possible moves and countermoves from the current position, the Minimax Algorithm then select the move that leads to the optimal outcome for the player. This is done by assigning a score to each possible move based on its likelihood of leading to a win for the player, and then choosing the move with the highest score. 
 
 The algorithm also considers the countermoves that the opponent might make in response to the player's move, and adjusts the score accordingly.
 
-### How does the Minimax Algorithm work?
+## How does the Minimax Algorithm work?
 
 The algorithm begins by evaluating the current game state and assigning a score to it based on the likelihood of the player winning from that position.
 
@@ -30,7 +29,7 @@ For each possible move and countermove, the algorithm assigns a score based on t
 
 The minimax algorithm continues to search and evaluate moves and countermoves in this way until it reaches a terminal game state, such as a win or a draw. At that point, it returns the score for the terminal game state as the result of the search.
 
-### The Evaluation Functions
+## The Evaluation Functions
 
 Using the minimax algorithm to play Othello requires the development of a good evaluation function, which is used to assign a score to each possible move based on its likelihood of leading to a win for the player.
 
@@ -40,21 +39,21 @@ We designed the weighted squares on the board, the smaller the number, the great
 
 Other factors for an evaluation function including Mobility and Stability can also take advantages in certain scenarios. We might won first place if we consider these factors, too late for us.
 
-### Why use α-β pruning?
+## Why use α-β pruning?
 
 α-β pruning is a optimization technique that is used to improve the efficiency of the minimax algorithm, which reduces the number of nodes that need to be evaluate and  lead to faster and more efficient searches.
 
-### What is α-β?
+## What is α-β?
 
 α-β pruning works by maintaining two values. α and β, represents the minimum and maximum scores that can be achieved by the player and the opponent.
 
-### How does α-β pruning work?
+## How does α-β pruning work?
 
 As the minimax algorithm searches the game tree, it updates the values of α and β based on the scores of the nodes that it evaluates.
 
 If the value of α exceeds the value of β at any point during the search, the algorithm can stop searching the subtree rooted at that node, as the player will not choose a move that leads to a worse outcome.
 
-### Run Test
+## Run Test
 Run.exe is the interface program.
 
 Test_Opponent.exe is a test program.
