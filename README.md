@@ -1,4 +1,4 @@
-## Othello_AI
+# Othello_AI
 ### Game tree AB search Othello Competition and presentation.
 
 #### Description
