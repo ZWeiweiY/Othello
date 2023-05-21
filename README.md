@@ -74,7 +74,9 @@ run Test_Opponent F 20
 run Ot8b S 20
 ```
 
-- Assuming that Test_Opponent is the first player, first enter F in the window of Test_Opponent, and then enter S in the window of Ot8b. The two programs will switch sequences, and be tested for 20 rounds
-- The result will be placed in a txt file result.txt.
+- Assuming that Test_Opponent is the first player, first enter F in the window of Test_Opponent, and then enter S in the window of Ot8b. 
+- The two programs will switch sequences, and be tested for 20 rounds
 - After the test, the winning percentage of the winner will be displayed
-- If not, execute Run.exe after execution, you will see the winning percentage of the winner.
+- The steps and result will be placed in of.txt, with the file name displaying the winner and score.
+- The result will also be placed in result.txt.
+- If the winning percentage of the winner is not displayed, execute Run.exe after execution, you will see the winning percentage of the winner.
