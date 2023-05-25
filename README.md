@@ -59,7 +59,7 @@ As the minimax algorithm searches the game tree, it updates the values of α and
 
 If the value of α exceeds the value of β at any point during the search, the algorithm can stop searching the subtree rooted at that node, as the player will not choose a move that leads to a worse outcome.
 
-## Run Test
+## Running Instructions
 
 Test_Opponent.exe is a test program.
 
