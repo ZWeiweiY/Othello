@@ -5,7 +5,7 @@ Othello, a strategy board game for two players, played on an 8×8 uncheckered bo
 
 By implementing artificial intelligence algorithms, such as minimax algorithm and alpha-beta pruning, in a game tree to go for the best move to increase the chance of winning!
 
-#### Potential improvements:
+**Potential improvements:**
 Modify evaluation function considering factors, such as Maximum Pieces, Weighted Square, Mobility and Stability Pieces.
 Other search methods such as NegaScout (Principle Variation Search), MTD(f) will reduce time and space complexity.
 
