@@ -14,7 +14,7 @@ Other search methods such as NegaScout (Principle Variation Search), MTD(f) will
 
 ### Minimax Algorithm
 
-**Why use the Minimax Algorithm?**
+- **Why use the Minimax Algorithm?**
 
 The minimax algorithm is a robust and reliable method for finding the optimal move in a given position, which is a common choice for developing artificial intelligence (AI) players for two-player games which are deterministic and with perfect information like Othello. 
 
@@ -22,13 +22,13 @@ A deterministic game is a type of game in which the outcome is determined by the
 
 A perfect information game is a type of game in which all players have complete knowledge of the game state at all times. Each player has access to all of the information that is relevant to making decisions in the game, including the positions of all pieces on the board, the order in which moves have been made, and any other relevant information.
 
-**What is the Minimax Algorithm?**
+- **What is the Minimax Algorithm?**
 
 By evaluating all possible moves and countermoves from the current position, the Minimax Algorithm then select the move that leads to the optimal outcome for the player. This is done by assigning a score to each possible move based on its likelihood of leading to a win for the player, and then choosing the move with the highest score. 
 
 The algorithm also considers the countermoves that the opponent might make in response to the player's move, and adjusts the score accordingly.
 
-**How does the Minimax Algorithm work?**
+- **How does the Minimax Algorithm work?**
 
 The algorithm begins by evaluating the current game state and assigning a score to it based on the likelihood of the player winning from that position.
 
@@ -50,15 +50,15 @@ Other factors for an evaluation function including Mobility and Stability can al
 
 ### α-β pruning
 
-**Why use α-β pruning?**
+- **Why use α-β pruning?**
 
 α-β pruning is an optimization technique that is used to improve the efficiency of the minimax algorithm, which reduces the number of nodes that need to be evaluate and  lead to faster and more efficient searches.
 
-**What is α-β?**
+- **What is α-β?**
 
 α-β pruning works by maintaining two values. α and β, represents the minimum and maximum scores that can be achieved by the player and the opponent.
 
-**How does α-β pruning work?**
+- **How does α-β pruning work?**
 
 As the minimax algorithm searches the game tree, it updates the values of α and β based on the scores of the nodes that it evaluates.
 
